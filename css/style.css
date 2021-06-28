@@ -6,13 +6,16 @@
   font-family: 'lato' , sans-serif;
 }
 
+.wrapper {
+  max-width: 1369px;
+  padding: 0 5px;
+  margin: 0 auto;
+}
+
 .menu {
   display: flex;
   justify-content: space-between;
-  max-width: 1369px;
   height: 85px;
-  padding: 0 5px;
-  margin: 0 auto;
   align-items: center;
 }
 
@@ -22,8 +25,6 @@
 
 .menu__list {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
 }
 
 .menu__list ul {
@@ -39,6 +40,7 @@
 
 .menu__list a {
   font-style: normal;
+  font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   color: #292929;
@@ -51,7 +53,7 @@
   align-items: center;
 }
 
-.menu__sing .sing {
+.menu__sing a {
   margin-right: 35px;
   text-align: center;
   font-family: Lato;
@@ -59,6 +61,7 @@
   font-weight: normal;
   font-size: 20px;
   line-height: 24px;
+  color: black;
 }
 
 .menu__sing .button {

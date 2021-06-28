@@ -6,43 +6,44 @@
     text-decoration: none;
     font-family: 'lato' , sans-serif;
 }
+.wrapper{
+    max-width: 1369px;
+    padding: 0 5px ;
+    margin: 0 auto;
+}
 .menu {
     display: flex;
     justify-content: space-between;
-    max-width: 1369px;
     height: 85px;
-    padding: 0 5px ;
-    margin: 0 auto;
     align-items: center;
     &__logo{
         width: 50%;
     }
     &__list {
-      width:100%;
-      display: flex;
-      justify-content: space-between;
-      ul{
+        width:100%;
+        ul{
           display: flex;
           justify-content: space-between;
           width: 100%;
-      }
-      li {
+        }
+        li {
         list-style: none;
         text-align: center;
-      }
-      a {
+        }
+        a {
         font-style: normal;
+        font-weight: 500;
         font-size: 20px;
         line-height: 24px;
         color: #292929;
-      }
+        }
     }
     &__sing{
         width: 100%;
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        .sing{
+            a{
             margin-right: 35px;
             text-align: center;
             font-family: Lato;
@@ -50,7 +51,8 @@
             font-weight: normal;
             font-size: 20px;
             line-height: 24px;
-        }
+            color: black;
+            }
         .button{
             width: 183px;
             height: 51px;
