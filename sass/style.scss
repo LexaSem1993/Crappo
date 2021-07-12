@@ -66,4 +66,41 @@
             color: #FFFFFF;
         }
     }
+<<<<<<< HEAD
+=======
+}
+.guide{
+    background-image: url(/img/Group56.png);
+    width: 100%;
+    background-size: cover;
+    position: absolute;
+    margin: 0 auto;
+&__text{
+    width: 440px;
+    h1{
+        font-family: Georgia;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 65px;
+        line-height: 74px;
+        color: #01996D;
+        width: 100%;
+        margin-top: 175px;
+    }
+    p{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 31px;
+        color: #484848;
+        margin-top: 30px;
+        width: 100%;
+    }
+    .button{
+        margin-top: 18px;
+        margin-bottom: 336px;
+    }
+}
+>>>>>>> parent of 7faa06d... Update style.scss
 }
