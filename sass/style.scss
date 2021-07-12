@@ -10,6 +10,21 @@
     max-width: 1369px;
     padding: 0 5px ;
     margin: 0 auto;
+    width: 100%;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 183px;
+    height: 51px;
+    background: #01996D;
+    border: 1px solid #01996D;
+    border-radius: 4px;
+    font-family: Lato;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
 }
 .menu {
     display: flex;
@@ -53,17 +68,39 @@
             line-height: 24px;
             color: black;
             }
-        .button{
-            width: 183px;
-            height: 51px;
-            background: #01996D;
-            border: 1px solid #01996D;
-            border-radius: 4px;
-            font-family: Lato;
-            font-size: 20px;
-            line-height: 25px;
-            text-align: center;
-            color: #FFFFFF;
-        }
     }
+}
+.guide{
+    background-image: url(/img/Group56.png);
+    width: 100%;
+    background-size: cover;
+    position: absolute;
+    margin: 0 auto;
+&__text{
+    width: 440px;
+    h1{
+        font-family: Georgia;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 65px;
+        line-height: 74px;
+        color: #01996D;
+        width: 100%;
+        margin-top: 175px;
+    }
+    p{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 31px;
+        color: #484848;
+        margin-top: 30px;
+        width: 100%;
+    }
+    .button{
+        margin-top: 18px;
+        margin-bottom: 336px;
+    }
+}
 }
