@@ -3,4 +3,4 @@ const userInfo = {
     age: 30,
     "55" : true,
     }
-console.log(userInfo[55])
+console.log(userInfo[55]);
