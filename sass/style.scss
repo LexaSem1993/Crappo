@@ -2,6 +2,7 @@
 :root{
   --dark: #0D0D2B;
   --white: #FFFFFF;
+  --white--rgb: 255,255,255;
   --blue: #3671E9;
   --purple: #2B076E;
 }
@@ -15,7 +16,7 @@ body {
   font-family: 'Rubik', sans-serif;
 }
 .wrapper{
-  max-width: 1222px;
+  max-width: 1202px;
   width: 100%;
   margin: 0 auto;
   padding: 0 10px;
@@ -33,19 +34,21 @@ body {
     display: flex;
     align-items: center;
     list-style-type: none;
+    letter-spacing: 0.01em;
     &__item{
       margin-left: 32px;
+      font-weight: normal;
       .login{
-        margin-left: 56px;
+        margin-left: 24px;
         padding-right: 24px;
         border-right: 1px solid rgba(242,242,242,0.3);
         font-weight: 500;
       }
       .register{
-        margin-left: 24px;
+        margin-left: -9px;
         background-color: var(--blue);
         border-radius: 32px;
-        padding: 14px 32px;
+        padding: 17px 32px 17px 32px;
         font-weight: 500;
         transition: 0.2s ease background-color;
       }
@@ -62,6 +65,49 @@ body {
     }
     &__link:hover{
       color: var(--blue);
+    }
+  }
+}
+.main{
+  display: flex;
+  margin-top: 51px;
+  align-items: center;
+  &__content{
+    display: flex;
+    align-content: center;
+    width: 100%;
+  }
+  &__text{
+    margin-top: 80px;
+    max-width: 600px;
+    width: 100%;
+    .sale{
+      background-color: rgba(var(--white--rgb),10%);
+      display: inline-block;
+      border-radius: 32px;
+      padding: 8px 8px 8px 4px;
+      span{
+        background-color: var(--white);
+        border-radius: 32px;
+        color: var(--dark);
+        padding: 4px 16px;
+        margin-right: 16px;
+      }
+    }
+    .title{
+      font-size: 64px;
+      font-weight: 700;
+    }
+    .description{
+      line-height: 1.6;
+      letter-spacing: 0.01em;
+      color: #E0E0E0;
+    }
+  }
+  &__img{
+    flex-grow: 1;
+    .image{
+    width: 100%;
     }
   }
 }
