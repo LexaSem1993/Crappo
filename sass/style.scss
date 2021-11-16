@@ -283,6 +283,53 @@ body {
   color:var(--dark);
   &__content{
     padding: 0 10px;
+    .crypto{
+      &__title{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 150%;
+        text-align: center;
+      }
+      &__content{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+      }
+      &__item-active{
+        width: 370px;
+        height: 433px;
+        background: #2B076E;
+        backdrop-filter: blur(250px);
+        border-radius: 16px;
+        img{
+          margin: 48px 0 48px 0;
+        }
+      }
+      &__item{
+        width: 370px;
+        height: 433px;
+        backdrop-filter: blur(250px);
+        border-radius: 16px;
+        img{
+          margin: 48px 0 48px 0;
+        }
+      }
+      &__item-title{
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 150%;
+        color: var(--white);
+        span{
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 150%;
+          color: #FFFFFF;
+          opacity: 0.7;
+          vertical-align: middle;
+        }
+      }
+    }
   }
   .calc-foter{
     background-color: var(--white);
@@ -290,7 +337,7 @@ body {
     margin: 0 auto;
     border-radius: 0 0 16px 16px;
     padding-top: 48px;
-    box-shadow: 0px 80px 40px rgba(57, 23, 119, 1);
+    box-shadow: 0px 8px 40px rgba(57, 23, 119, 1) ;
     &__text{
       padding-left: 48px;
       padding-bottom: 48px;
@@ -310,6 +357,9 @@ body {
       line-height: 150%;
       letter-spacing: 0.04em;
       color: #0D0D2B;
+      span{
+        color: var(--blue);
+      }
     }
     &__description{
       font-size: 16px;
