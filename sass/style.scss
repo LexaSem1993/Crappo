@@ -9,6 +9,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   background-color: var(--dark);
@@ -57,6 +58,7 @@ body {
         background-color: var(--purple);
       }
     }
+    //если ссылка выглядет как кнопка делай display block или inline-block
     &__link{
       color: var(--white);
       text-decoration: none;
@@ -151,6 +153,7 @@ body {
     align-items: center;
     width: 100%;
   }
+  // Нужно добавлять margin между блоками
   &__item{
     display: flex;
   }
@@ -177,6 +180,7 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
   }
+  //Вставялй в html а не так
   .stat__icon01{
     background-image: url(../img/icon01.svg) ;
   }
@@ -255,6 +259,7 @@ body {
       background-repeat: no-repeat;
       background-position: right 4px;
     }
+    //cursor: pointer;
     &__button{
       font-size: 18px;
       text-decoration: none;
@@ -285,6 +290,7 @@ body {
     padding: 0 10px;
     .crypto{
       padding-bottom: 100px;
+
       &__title{
         width: 741px;
         font-style: normal;
@@ -294,6 +300,7 @@ body {
         margin: 100px auto 64px;
         text-align: center;
       }
+
       &__item-title-btn {
         font-weight: 500;
         font-size: 18px;
@@ -303,6 +310,7 @@ body {
         opacity: 0.7;
         vertical-align: middle;
       }
+
       &__item-title-active-btn {
         font-weight: 500;
         font-size: 18px;
@@ -312,14 +320,18 @@ body {
         opacity: 0.7;
         vertical-align: middle;
       }
+
       &__content{
         display: flex;
         justify-content: space-between;
         text-align: center;
+        margin: 0 -10px;
       }
+
       &__item-active{
         width: 370px;
         height: 433px;
+        margin: 0 10px;
         background: #2B076E;
         backdrop-filter: blur(250px);
         border-radius: 16px;
@@ -327,9 +339,11 @@ body {
           margin: 48px 0 48px 0;
         }
       }
+      // Нужно добавлять margin между блоками
       &__item{
         width: 370px;
         height: 433px;
+        margin: 0 10px;
         backdrop-filter: blur(250px);
         border-radius: 16px;
         background: var(--white);
