@@ -1,6 +1,11 @@
-const userInfo = {
-    name: "Вася",
-    age: 30,
-    "55" : true,
+'use strict'
+if (2 > 1){
+function showName() {
+    console.log('Dfcz');
     }
+<<<<<<< Updated upstream
 console.log(userInfo[55]);
+=======
+    showName();
+}
+>>>>>>> Stashed changes
